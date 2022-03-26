@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
-import {InputGroup,  Input, InputGroupAddon, Button, FormGroup, Label,Spinner} from 'reactstrap';
+import {InputGroup,  Input, InputGroupAddon, Button, FormGroup, Label,Spinner,} from 'reactstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import axios from 'axios';
@@ -8,13 +8,13 @@ import BookCard from './BookCard.jsx';
 
 
 const Bookslist = () => {
-  // States
+
   const [maxResults, setMaxResults] = useState(10);
   const [startIndex, setStartIndex] = useState(1);
   const [query, setQuery] = useState('');
   const [loading, setLoading] = useState(false);
   const [cards, setCards] = useState([]);
-  // Handle Search
+  
   const handleSubmit = () => {
     setLoading(true);
     if (maxResults > 40 || maxResults < 1) {
@@ -42,20 +42,20 @@ const Bookslist = () => {
         });
     }
   };
-  // Main Show Case
+  
   const mainHeader = () => {
     return (
       <div className='main-image d-flex justify-content-center align-items-center flex-column'>
-        {/* Overlay */}
         <div className='filter'></div>
         <h1
           className='display-2 text-center text-white mb-3'
           style={{ zIndex: 2 }}
         >
-          <img src="https://drive.google.com/uc?export=view&id=1aAS1Js45TPgTWDEghLg5-d9crL-OgNo2" alt="logo" />
+          <img src="https://drive.google.com/uc?export=view&id=1aAS1Js45TPgTWDEghLg5-d9crL-OgNo2" alt="logo" width="100%" height="auto" />
 
         </h1>
-        <div style={{ width: '60%', zIndex: 2 }}>
+      
+        <div style={{ width: '50%', zIndex: 2 }}>
           <InputGroup size='lg' className='mb-3'>
             <Input
               placeholder='Pencarian buku...'
@@ -68,7 +68,7 @@ const Bookslist = () => {
               </Button>
             </InputGroupAddon>
           </InputGroup>
-          <div className='d-flex text-white justify-content-center'>
+          <div className ='d-flex text-white justify-content-center'>
             <FormGroup >
               <Label for='maxResults'>Maksimal Pencarian</Label>
               <Input

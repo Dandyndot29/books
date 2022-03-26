@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  } from 'reactstrap';
+import {Collapse,Navbar,NavbarToggler,NavbarBrand,Nav,NavItem,NavLink,Container,} from 'reactstrap';
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -25,8 +17,10 @@ export default class Example extends React.Component {
   }
   render() {
     return (
+      
       <div>
         <Navbar color="light" light expand="md">
+        <Container>
           <NavbarBrand href="">
           <img
           alt=""
@@ -53,11 +47,14 @@ export default class Example extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="">Sign Up</NavLink>
-              </NavItem>
+              </NavItem> 
             </Nav>
           </Collapse>
+          </Container>
         </Navbar>
       </div>
+    
+      
     );
   }
 }

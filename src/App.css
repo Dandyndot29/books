@@ -1,9 +1,7 @@
-.App {
-background: url(https://www.teahub.io/photos/full/55-553913_photo-wallpaper-background-wallpaper-blur-book-book-background.jpg);
-}
+
 
 .main-image {
-  background: url(https://cdn.wallpapersafari.com/32/64/nQjfNW.jpg);
+  background: url(https://wallpaperaccess.com/full/84248.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -11,18 +9,6 @@ background: url(https://www.teahub.io/photos/full/55-553913_photo-wallpaper-back
   height: 80vh;
   position: relative;
   background-attachment: fixed;
-}
-
-.filter:after {
-  background-color: rgba(0, 0, 0, 0.4);
-  content: '';
-  display: block;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
 }
 
 .card-title {
@@ -34,6 +20,14 @@ background: url(https://www.teahub.io/photos/full/55-553913_photo-wallpaper-back
   text-overflow: ellipsis;
 }
 
-#btn-link {
-  color: red;
+.display-3 {
+  text-align: center;
+}
+
+.lead {
+  text-align: center;
+}
+
+.my-2 {
+  text-align: center;
 }
