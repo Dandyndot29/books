@@ -52,7 +52,8 @@ const Bookslist = () => {
           className='display-2 text-center text-white mb-3'
           style={{ zIndex: 2 }}
         >
-          Zona Literasi
+          <img src="https://drive.google.com/uc?export=view&id=1aAS1Js45TPgTWDEghLg5-d9crL-OgNo2" alt="logo" />
+
         </h1>
         <div style={{ width: '60%', zIndex: 2 }}>
           <InputGroup size='lg' className='mb-3'>
