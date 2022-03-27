@@ -11,8 +11,6 @@ const Header = (props) => {
         Berkat Internet dan penyimpanan cloud, perpustakaan digital mengatasi keterbatasan ini, memperluas wawasan siswa dalam belajar. Mereka dapat mengakses sejumlah besar pengetahuan dan berbagi konten dengan orang lain, memfasilitasi perluasan pendidikan.</p>
         <p className="lead">FIND YOUR BOOKS HERE !! <i class="fa-solid fa-cloud-arrow-down"></i>
         </p>
-        
-   
       </Jumbotron>
     </div>
   );

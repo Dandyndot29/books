@@ -52,7 +52,6 @@ const Bookslist = () => {
           style={{ zIndex: 2 }}
         >
           <img src="https://drive.google.com/uc?export=view&id=1aAS1Js45TPgTWDEghLg5-d9crL-OgNo2" alt="logo" width="100%" height="auto" />
-
         </h1>
       
         <div style={{ width: '50%', zIndex: 2 }}>
