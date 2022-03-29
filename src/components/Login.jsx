@@ -3,18 +3,15 @@ import { GoogleLogin, GoogleLogout } from 'react-google-login';
 
 export default function Login() {
     
-    // clientId is copied from Client ID of Google Developer Console/Google Cloud Platform
-    const clientId = "648341299149-1o6kq6frd26fd9pibhaivjrvsqpso70v.apps.googleusercontent.com";
     
-    // using useState 
-    const [loginButton, setLoginButton] = useState(true); // it's true bcoz initially login button needs to be shown.
-    const [logoutButton, setLogoutButton] = useState(false); // opposite of the prev. one coz it's shown only after user's logged in.
+    const clientId = "648341299149-1o6kq6frd26fd9pibhaivjrvsqpso70v.apps.googleusercontent.com";
+   
+    const [loginButton, setLoginButton] = useState(true); 
+    const [logoutButton, setLogoutButton] = useState(false); 
       
-    // defining the functions declared inside div tag
     const loginSuccess = (res) => {
-        console.log("LogSuccess : ", res.profileObj); //here, profileObj gives basic details.
+        console.log("LogSuccess : ", res.profileObj); 
         
-        // there's no point to show login and disable the logout button after the user's logged in successfully. 
         setLoginButton(false);
         setLogoutButton(true);
     }
@@ -32,7 +29,7 @@ export default function Login() {
     
     return (
         <div>
-        {/* if the condition is true in the state then it'll display the respective buttons otherwise it'll display null */}
+        {}
             { loginButton ?
                 <GoogleLogin
                     clientId = {clientId}
