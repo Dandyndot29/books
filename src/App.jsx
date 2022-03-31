@@ -7,8 +7,6 @@ import Footer from './components/footer';
 import Login from './components/Login';
 
 
-
-
 function App() {
   return (
     <div className="App">
@@ -17,7 +15,6 @@ function App() {
       <Header/>
       <Bookslist/>
       <Footer/>
-     
      </div>
   );
 }
